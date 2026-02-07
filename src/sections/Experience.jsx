@@ -30,20 +30,21 @@ const experiences = [
     current: true,
   },
   {
-    period: "May 2024 — Aug 2024",
-    role: "Technical Intern",
-    company: "Unilogik Systems Inc. (Vancouver, BC)",
-    description:
-        "Supported CRM automation and reporting by building HubSpot integrations and streamlining operational workflows with automation.",
-    achievements: [
-      "Built HubSpot CRM integrations to automate data flows for reporting and business insights.",
-      "Automated operational tasks using Ansible, reducing manual effort by ~35%.",
-      "Developed workflows that reduced processing time and follow-ups by ~25%.",
-      "Tested and monitored integrations to identify issues, reducing CRM errors by ~20%.",
-    ],
-    technologies: ["HubSpot", "API Integrations", "Ansible", "Data Workflows"],
-    current: false,
-  },
+  period: "September 2025 — December 2025",
+  role: "Lab Assistant (Cybersecurity)",
+  company: "University of the Fraser Valley (Abbotsford, BC)",
+  description:
+      "Supported hands-on cybersecurity labs by assisting students with malware analysis exercises, virtual lab environments, and incident response concepts in a controlled academic setting.",
+  achievements: [
+    "Assisted with labs covering malware execution, persistence techniques, and common attack methods in isolated virtual environments.",
+    "Supported analysis of malicious behavior using system logs, network traffic inspection, and sandboxed testing tools.",
+    "Guided students in identifying indicators of compromise and understanding basic incident response workflows.",
+    "Helped maintain lab environments, troubleshoot setup issues, and ensure systems were ready for scheduled sessions.",
+  ],
+  technologies: ["Virtual Machines", "Cybersecurity Labs", "Log Analysis", "Network Monitoring"],
+  current: false,
+},
+
 ];
 
 export const Experience = () => {
