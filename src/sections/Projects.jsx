@@ -31,7 +31,7 @@ const projects = [
       "KNN",
       "Model Evaluation",
     ],
-    link: "https://github.com/adakolejumbo/adakole_machine_learning_project",
+    link: "https://adakole-crypto-project.vercel.app/",
     github: "https://github.com/adakolejumbo/adakole_machine_learning_project",
   },
 ];
