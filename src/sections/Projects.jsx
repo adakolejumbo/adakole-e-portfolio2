@@ -34,6 +34,23 @@ const projects = [
     link: "https://adakole-crypto-project.vercel.app/",
     github: "https://github.com/adakolejumbo/adakole_machine_learning_project",
   },
+  {
+  title: "Fitness Tracker Application",
+  description:
+    "A full-stack fitness tracking application built with React and Strapi, enabling users to manage workouts and track progress through API-driven data. Includes robust error handling, backend integration, and structured content management.",
+  image: "/projects/project3.png", // replace with actual image later
+  tags: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Strapi",
+    "REST API",
+    "Authentication",
+    "Vercel",
+  ],
+  link: "https://fitness-tracker-client-rho.vercel.app/", // replace with live link if deployed
+  github: "https://github.com/YOUR-REPO-LINK",
+}
 ];
 
 export const Projects = () => {
