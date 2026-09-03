@@ -4,30 +4,30 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-        "Adakole is extremely detail-oriented. He validates data carefully, follows quality guidelines closely, and consistently delivers accurate work on time.",
+        "Adakole is thorough with account and access issues. He follows verification policy closely and documents every step, which makes recurring tickets easy to trace.",
     author: "Team Lead",
-    role: "Data Quality & Analytics",
+    role: "Boleaum Inc.",
     avatar: "/testimonials/avatar1.jpg", // optional: replace later
   },
   {
     quote:
-        "He communicates clearly and makes collaboration easy. When requirements change, Adakole adapts quickly and documents what was updated so the team stays aligned.",
-    author: "Project Collaborator",
-    role: "Software Development",
+        "He explains technical problems in plain language and stays calm under pressure. Customers leave conversations with him understanding exactly what happened.",
+    author: "Supervisor",
+    role: "Marshalls",
     avatar: "/testimonials/avatar2.jpg", // optional: replace later
   },
   {
     quote:
-        "Adakole contributed to automation and workflow improvements that reduced repetitive tasks. His approach is practical and focused on measurable impact.",
-    author: "Supervisor",
-    role: "Operations & Automation",
+        "Adakole picked up our stack quickly and shipped a working voice assistant end to end in six weeks, including fixes for bugs that weren't obvious to catch.",
+    author: "Program Lead",
+    role: "SpaceBeacon Foundation",
     avatar: "/testimonials/avatar3.jpg", // optional: replace later
   },
   {
     quote:
         "Strong problem-solver with a growth mindset. He asks the right questions, learns fast, and produces work that is clean, reliable, and easy to maintain.",
-    author: "Mentor",
-    role: "Engineering",
+    author: "Faculty Supervisor",
+    role: "University of the Fraser Valley",
     avatar: "/testimonials/avatar4.jpg", // optional: replace later
   },
 ];
@@ -44,28 +44,16 @@ export const Testimonials = () => {
   };
 
   return (
-      <section id="testimonials" className="py-32 relative overflow-hidden">
-        <div
-            className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/5
-        rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
-        />
-
-        <div className="container mx-auto px-6 relative z-10">
+      <section id="testimonials" className="py-24 md:py-32">
+        <div className="container mx-auto px-6">
           {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Testimonials
-          </span>
-
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-              Feedback that reflects{" "}
-              <span className="font-serif italic font-normal text-white">
-              how I work.
-            </span>
+          <div className="max-w-2xl mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold leading-tight animate-fade-in">
+              How I work
             </h2>
 
-            <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              Short references focused on accuracy, collaboration, and building reliable solutions.
+            <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-100">
+              Short references focused on reliability, communication, and follow-through.
             </p>
           </div>
 

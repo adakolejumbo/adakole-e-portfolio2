@@ -1,140 +1,116 @@
 const experiences = [
   {
-    period: "Aug 2025 — Present",
-    role: "Online Data Analyst",
-    company: "TELUS International (Remote)",
+    period: "Jul 2026 — Aug 2026",
+    role: "Digital Skills & AI Readiness Intern",
+    company: "SpaceBeacon Foundation · Abbotsford, BC",
     description:
-        "Analyze and validate large datasets for accuracy, relevance, and risk. Maintain strong quality standards while delivering consistently in a metrics-driven environment.",
+        "Six-week program building a voice-first, multilingual support assistant for the Archway Food Bank.",
     achievements: [
-      "Validated 300–500+ records weekly, ensuring accuracy, consistency, and compliance.",
-      "Achieved 95–98% accuracy in data annotation and classification to support improved AI outputs.",
-      "Maintained 100% on-time delivery with structured task and dataset tracking.",
-      "Provided weekly feedback reports on data quality issues and process improvements.",
+      "Built and deployed Food Bank Helper, a voice-first, 7-language support assistant grounded on real organizational data.",
+      "Fixed cross-browser voice/session bugs, including a stuck recording timer, iOS autoplay restrictions, and blank-screen routing on refresh.",
+      "Collaborated with fellow interns on digital-readiness frameworks for the Fraser Valley region.",
+      "Presented internship outcomes directly to a Member of Parliament in non-technical language.",
     ],
-    technologies: ["Data Validation", "Quality Assurance", "Research", "Reporting"],
+    technologies: ["React", "Node.js", "Anthropic API", "Supabase"],
+    current: false,
+  },
+  {
+    period: "May 2023 — Present",
+    role: "Remote Support Technician (Technical Analyst)",
+    company: "Boleaum Inc. · Remote",
+    description:
+        "Remote technical support for Microsoft 365, Active Directory, and Azure AD (Entra ID) accounts.",
+    achievements: [
+      "Supported 50+ end users, resolving Microsoft 365 and Entra ID issues at a 90% first-response resolution rate.",
+      "Managed account provisioning, password resets, and access permissions under access-control policy.",
+      "Reviewed recurring tickets and coordinated fixes with developers and QA, cutting recurring incidents by 25%.",
+      "Documented every troubleshooting step, improving resolution efficiency by 30%.",
+    ],
+    technologies: ["Microsoft 365", "Active Directory", "Azure AD (Entra ID)", "Ticketing"],
     current: true,
   },
   {
     period: "May 2023 — Present",
-    role: "Full Stack Web Developer",
-    company: "Boleaum Inc. (Calgary, AB)",
+    role: "Sales Coordinator",
+    company: "Marshalls · Abbotsford, BC",
     description:
-        "Contribute to full stack development for internal tools and client-facing applications in a consulting environment. Support backend integrations and cloud deployments with a focus on maintainability and usability.",
+        "Frontline customer support and in-store security-system operation in a high-volume retail environment.",
     achievements: [
-      "Built and enhanced responsive UI features using HTML, CSS, JavaScript, and modern frontend frameworks.",
-      "Developed backend functionality using RESTful APIs, server-side logic, and database integrations.",
-      "Supported deployments and cloud integrations across AWS, Azure, and GCP.",
-      "Collaborated on requirements clarification, testing, debugging, and documentation to reduce rework.",
+      "Managed customer expectations and explained solutions clearly across a wide range of issues.",
+      "Operated in-store alarm panels — arming, disarming, and responding to triggered alerts.",
+      "Followed activation, reset, and documentation protocols for reliable alarm-signal transmission.",
+      "Trained 5+ new employees on POS systems and support procedures.",
     ],
-    technologies: ["JavaScript", "HTML/CSS", "REST APIs", "Databases", "AWS/Azure/GCP"],
+    technologies: ["Customer Support", "Security Systems", "Training"],
     current: true,
   },
   {
-  period: "September 2025 — December 2025",
-  role: "Lab Assistant (Cybersecurity)",
-  company: "University of the Fraser Valley (Abbotsford, BC)",
-  description:
-      "Supported hands-on cybersecurity labs by assisting students with malware analysis exercises, virtual lab environments, and incident response concepts in a controlled academic setting.",
-  achievements: [
-    "Assisted with labs covering malware execution, persistence techniques, and common attack methods in isolated virtual environments.",
-    "Supported analysis of malicious behavior using system logs, network traffic inspection, and sandboxed testing tools.",
-    "Guided students in identifying indicators of compromise and understanding basic incident response workflows.",
-    "Helped maintain lab environments, troubleshoot setup issues, and ensure systems were ready for scheduled sessions.",
-  ],
-  technologies: ["Virtual Machines", "Cybersecurity Labs", "Log Analysis", "Network Monitoring"],
-  current: false,
-},
-
+    period: "Sep 2025 — Dec 2025",
+    role: "Cybersecurity Lab Assistant",
+    company: "University of the Fraser Valley · Abbotsford, BC",
+    description:
+        "Hands-on troubleshooting support for students in network security coursework.",
+    achievements: [
+      "Diagnosed system and network issues using Wireshark, focusing on IPv4 traffic and anomaly detection.",
+      "Coordinated with faculty to review recurring lab issues and maintain configuration records.",
+      "Supported 30+ students with firewall rules, IP whitelisting, and access control concepts.",
+    ],
+    technologies: ["Wireshark", "IPv4 Networking", "Firewalls"],
+    current: false,
+  },
 ];
 
 export const Experience = () => {
   return (
-      <section id="experience" className="py-32 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
-
-        <div className="container mx-auto px-6 relative z-10">
+      <section id="experience" className="py-24 md:py-32">
+        <div className="container mx-auto px-6">
           {/* Section Header */}
-          <div className="max-w-3xl mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Career Journey
-          </span>
-
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-              Experience that{" "}
-              <span className="font-serif italic font-normal text-white">
-              shows measurable results.
-            </span>
+          <div className="max-w-2xl mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold leading-tight animate-fade-in">
+              Where I&apos;ve worked
             </h2>
-
-            <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              Roles focused on data quality, reporting, automation, and building
-              reliable software—from consulting environments to metrics-driven analytics work.
+            <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-100">
+              Support, security, and software — across an internship, a
+              part-time analyst role, a retail floor, and a university lab.
             </p>
           </div>
 
           {/* Timeline */}
-          <div className="relative">
-            <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
+          <div className="relative border-l border-border pl-8 space-y-12">
+            {experiences.map((exp, idx) => (
+                <div
+                    key={idx}
+                    className="relative animate-fade-in"
+                    style={{ animationDelay: `${(idx + 1) * 80}ms` }}
+                >
+                  <div className="absolute -left-[calc(2rem+4.5px)] top-1.5 w-2 h-2 rounded-full bg-primary ring-4 ring-background" />
 
-            <div className="space-y-12">
-              {experiences.map((exp, idx) => (
-                  <div
-                      key={idx}
-                      className="relative grid md:grid-cols-2 gap-8 animate-fade-in"
-                      style={{ animationDelay: `${(idx + 1) * 150}ms` }}
-                  >
-                    {/* Timeline Dot */}
-                    <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
-                      {exp.current && (
-                          <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
-                      )}
-                    </div>
+                  <span className="font-mono text-xs text-muted-foreground">{exp.period}</span>
+                  <h3 className="text-lg font-semibold mt-1">{exp.role}</h3>
+                  <p className="text-muted-foreground text-sm">{exp.company}</p>
 
-                    {/* Content */}
-                    <div
-                        className={`pl-8 md:pl-0 ${
-                            idx % 2 === 0 ? "md:pr-16 md:text-right" : "md:col-start-2 md:pl-16"
-                        }`}
-                    >
-                      <div className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500">
-                        <span className="text-sm text-primary font-medium">{exp.period}</span>
-                        <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
-                        <p className="text-muted-foreground">{exp.company}</p>
+                  <p className="text-sm text-muted-foreground mt-3">{exp.description}</p>
 
-                        <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
+                  <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+                    {exp.achievements.map((a, aIdx) => (
+                        <li key={aIdx} className="leading-relaxed pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-border">
+                          {a}
+                        </li>
+                    ))}
+                  </ul>
 
-                        {/* Achievements */}
-                        <ul
-                            className={`mt-4 space-y-2 text-sm text-muted-foreground ${
-                                idx % 2 === 0 ? "md:text-right" : ""
-                            }`}
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {exp.technologies.map((tech, techIdx) => (
+                        <span
+                            key={techIdx}
+                            className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground"
                         >
-                          {exp.achievements.map((a, aIdx) => (
-                              <li key={aIdx} className="leading-relaxed">
-                                {a}
-                              </li>
-                          ))}
-                        </ul>
-
-                        <div
-                            className={`flex flex-wrap gap-2 mt-5 ${
-                                idx % 2 === 0 ? "md:justify-end" : ""
-                            }`}
-                        >
-                          {exp.technologies.map((tech, techIdx) => (
-                              <span
-                                  key={techIdx}
-                                  className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground"
-                              >
                           {tech}
                         </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
-              ))}
-            </div>
+                </div>
+            ))}
           </div>
         </div>
       </section>

@@ -3,21 +3,17 @@ import { ArrowRight, ChevronDown, Github, Linkedin, Download } from "lucide-reac
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const SKILLS = [
+  "Microsoft 365",
+  "Active Directory",
+  "Azure AD (Entra ID)",
+  "Networking",
+  "Wireshark",
   "React",
   "JavaScript",
-  "HTML",
-  "CSS",
   "Python",
-  "pandas",
-  "Machine Learning",
-  "REST APIs",
-  "Data Validation",
-  "Data Analysis",
   "SQL",
+  "AWS",
   "Git",
-  "GitHub",
-  "Vercel",
-  "Tailwind CSS",
 ];
 
 const SOCIALS = [
@@ -35,48 +31,32 @@ const SOCIALS = [
 
 export const Hero = () => {
   return (
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0">
-          <img
-              src="/hero-bg.jpg"
-              alt="Hero background"
-              className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
-        </div>
-
-        {/* Content */}
-        <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative min-h-screen flex items-center">
+        <div className="container mx-auto px-6 pt-32 pb-20">
+          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-16 items-center">
             {/* Left */}
             <div className="space-y-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Junior Data Analyst • Full Stack Developer
-            </span>
-
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Turning <span className="text-primary">data</span>
-                <br />
-                into reliable
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                software solutions.
+              <span className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground animate-fade-in">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full" />
+                open to support &amp; full-stack roles
               </span>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] animate-fade-in animation-delay-100">
+                I troubleshoot systems, secure access, and ship software.
               </h1>
 
-              <p className="text-lg text-muted-foreground max-w-lg">
-                Hi, I am{" "}
-                <span className="text-white font-medium">
-                Adakole Jumbo-Ochigbo
-              </span>{" "}
-                — a Computer Information Systems student with experience in data
-                validation, automation, and full stack web development.
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                Hi, I&apos;m{" "}
+                <span className="text-foreground font-medium">
+                  Adakole Jumbo-Ochigbo
+                </span>{" "}
+                — a Systems Support Technician and full stack developer in
+                Abbotsford, BC, working across Microsoft 365, Active Directory,
+                networking, and React.
               </p>
 
               {/* CTAs */}
-              <div className="flex gap-4 flex-wrap">
+              <div className="flex gap-4 flex-wrap animate-fade-in animation-delay-300">
                 <Button size="lg">
                   <a href="#contact" className="inline-flex items-center gap-2">
                     Contact Me <ArrowRight className="w-5 h-5" />
@@ -85,7 +65,7 @@ export const Hero = () => {
 
                 <AnimatedBorderButton>
                   <a
-                      href="/projects/ADAKOLE%20BC%20Data%20analyst%20resume.pdf"
+                      href="/projects/Adakole_Jumbo-Ochigbo_Resume.pdf"
                       download="Adakole_Jumbo-Ochigbo_Resume.pdf"
                       className="inline-flex items-center gap-2"
                   >
@@ -96,7 +76,7 @@ export const Hero = () => {
               </div>
 
               {/* Socials */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                 <span className="text-sm text-muted-foreground">Connect:</span>
                 {SOCIALS.map((s) => (
                     <a
@@ -104,7 +84,7 @@ export const Hero = () => {
                         href={s.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
+                        className="p-2 rounded-full border border-border hover:border-primary/50 hover:text-primary transition-colors"
                     >
                       <s.icon className="w-5 h-5" />
                     </a>
@@ -113,27 +93,27 @@ export const Hero = () => {
             </div>
 
             {/* Right */}
-            <div className="relative">
-              <div className="relative max-w-md mx-auto glass rounded-3xl p-2 glow-border">
+            <div className="relative animate-fade-in animation-delay-300">
+              <div className="relative max-w-sm mx-auto rounded-2xl border border-border overflow-hidden">
                 <img
                     src="/profile-photo.jpg"
                     alt="Adakole Jumbo-Ochigbo"
-                    className="w-full aspect-[4/5] object-cover rounded-2xl"
+                    className="w-full aspect-[4/5] object-cover"
                 />
               </div>
             </div>
           </div>
 
           {/* Skills */}
-          <div className="mt-20">
-            <p className="text-sm text-muted-foreground mb-6 text-center">
-              Tools and technologies I work with
+          <div className="mt-24 pt-10 border-t border-border animate-fade-in animation-delay-500">
+            <p className="font-mono text-xs text-muted-foreground mb-6">
+              tools &amp; systems
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
               {SKILLS.map((skill) => (
                   <span
                       key={skill}
-                      className="text-muted-foreground/70 hover:text-muted-foreground transition-colors"
+                      className="text-muted-foreground/80 hover:text-foreground transition-colors text-sm"
                   >
                 {skill}
               </span>
@@ -143,13 +123,12 @@ export const Hero = () => {
         </div>
 
         {/* Scroll */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
           <a
               href="#about"
               className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
           >
-            <span className="text-xs uppercase tracking-wider">Scroll</span>
-            <ChevronDown className="w-6 h-6 animate-bounce" />
+            <ChevronDown className="w-5 h-5 animate-bounce" />
           </a>
         </div>
       </section>
