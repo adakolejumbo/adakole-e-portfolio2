@@ -3,7 +3,15 @@ import {
   Network,
   Code2,
   Users,
+  BadgeCheck,
 } from "lucide-react";
+
+const certifications = [
+  "CompTIA A+",
+  "CompTIA Security+",
+  "AWS Certified Cloud Practitioner",
+  "FoodSafe Level 1",
+];
 
 const highlights = [
   {
@@ -48,7 +56,7 @@ export const About = () => {
                 <p>
                   I&apos;m Adakole Jumbo-Ochigbo, a Computer Information Systems
                   graduate from the University of the Fraser Valley (GPA 3.66).
-                  I currently provide remote systems support at Boleaum Inc. —
+                  I work as a Remote Support Technician at Boleaum Inc. —
                   managing Microsoft 365 and Active Directory/Entra ID accounts
                   for 50+ users — while coordinating customer-facing support and
                   in-store security systems as a Sales Coordinator at Marshalls.
@@ -66,10 +74,29 @@ export const About = () => {
                 </p>
 
                 <p>
-                  I hold CompTIA A+, CompTIA Security+, and AWS Certified Cloud
-                  Practitioner certifications, and I&apos;m equally comfortable
-                  resetting an Entra ID account or shipping a React feature.
+                  I&apos;m comfortable with networking fundamentals (VPN, DHCP,
+                  DNS, IPv4, firewall configuration) and security best practices,
+                  and I&apos;m equally at home resetting an Entra ID account or
+                  shipping a React feature.
                 </p>
+              </div>
+
+              {/* Certifications */}
+              <div className="animate-fade-in animation-delay-200">
+                <p className="font-mono text-xs text-muted-foreground mb-3">
+                  certifications
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {certifications.map((cert) => (
+                      <span
+                          key={cert}
+                          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface text-xs text-muted-foreground border border-border/50"
+                      >
+                        <BadgeCheck className="w-3.5 h-3.5 text-primary" />
+                        {cert}
+                      </span>
+                  ))}
+                </div>
               </div>
             </div>
 

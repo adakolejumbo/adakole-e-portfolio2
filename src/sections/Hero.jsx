@@ -6,13 +6,17 @@ const SKILLS = [
   "Microsoft 365",
   "Active Directory",
   "Azure AD (Entra ID)",
-  "Networking",
+  "Windows Server",
+  "Zendesk / Ticketing",
+  "VPN · DHCP · DNS",
+  "Firewalls",
   "Wireshark",
-  "React",
-  "JavaScript",
+  "PowerShell",
   "Python",
+  "React",
   "SQL",
   "AWS",
+  "Docker",
   "Git",
 ];
 
@@ -38,7 +42,7 @@ export const Hero = () => {
             <div className="space-y-8">
               <span className="inline-flex items-center gap-2 font-mono text-xs text-muted-foreground animate-fade-in">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                open to support &amp; full-stack roles
+                open to IT &amp; technical support roles
               </span>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] animate-fade-in animation-delay-100">
@@ -50,9 +54,9 @@ export const Hero = () => {
                 <span className="text-foreground font-medium">
                   Adakole Jumbo-Ochigbo
                 </span>{" "}
-                — a Systems Support Technician and full stack developer in
-                Abbotsford, BC, working across Microsoft 365, Active Directory,
-                networking, and React.
+                — an IT Support Technician in Abbotsford, BC, working across
+                Microsoft 365, Active Directory/Entra ID, networking, and
+                security — CompTIA A+ and Security+ certified.
               </p>
 
               {/* CTAs */}

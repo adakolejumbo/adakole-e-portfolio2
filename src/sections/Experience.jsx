@@ -1,5 +1,20 @@
 const experiences = [
   {
+    period: "2023 — Present",
+    role: "Remote Support Technician (Technical Analyst)",
+    company: "Boleaum Inc. · Remote",
+    description:
+        "Remote technical support for Microsoft 365, Active Directory, and Azure AD (Entra ID) accounts.",
+    achievements: [
+      "Supported 50+ end users, resolving Microsoft 365 and Entra ID issues at a 90% first-response resolution rate.",
+      "Managed account provisioning, password resets, and access permissions under access-control policy.",
+      "Reviewed recurring tickets and coordinated fixes with developers and QA, cutting recurring incidents by 25%.",
+      "Documented every troubleshooting step, improving resolution efficiency by 30%.",
+    ],
+    technologies: ["Microsoft 365", "Active Directory", "Azure AD (Entra ID)", "Ticketing"],
+    current: true,
+  },
+  {
     period: "Jul 2026 — Aug 2026",
     role: "Digital Skills & AI Readiness Intern",
     company: "SpaceBeacon Foundation · Abbotsford, BC",
@@ -15,19 +30,18 @@ const experiences = [
     current: false,
   },
   {
-    period: "May 2023 — Present",
-    role: "Remote Support Technician (Technical Analyst)",
-    company: "Boleaum Inc. · Remote",
+    period: "Sep 2025 — Dec 2025",
+    role: "Cybersecurity Lab Assistant",
+    company: "University of the Fraser Valley · Abbotsford, BC",
     description:
-        "Remote technical support for Microsoft 365, Active Directory, and Azure AD (Entra ID) accounts.",
+        "Hands-on troubleshooting support for students in network security coursework.",
     achievements: [
-      "Supported 50+ end users, resolving Microsoft 365 and Entra ID issues at a 90% first-response resolution rate.",
-      "Managed account provisioning, password resets, and access permissions under access-control policy.",
-      "Reviewed recurring tickets and coordinated fixes with developers and QA, cutting recurring incidents by 25%.",
-      "Documented every troubleshooting step, improving resolution efficiency by 30%.",
+      "Diagnosed system and network issues using Wireshark, focusing on IPv4 traffic and anomaly detection.",
+      "Coordinated with faculty to review recurring lab issues and maintain configuration records.",
+      "Supported 30+ students with firewall rules, IP whitelisting, and access control concepts.",
     ],
-    technologies: ["Microsoft 365", "Active Directory", "Azure AD (Entra ID)", "Ticketing"],
-    current: true,
+    technologies: ["Wireshark", "IPv4 Networking", "Firewalls"],
+    current: false,
   },
   {
     period: "May 2023 — Present",
@@ -44,20 +58,6 @@ const experiences = [
     technologies: ["Customer Support", "Security Systems", "Training"],
     current: true,
   },
-  {
-    period: "Sep 2025 — Dec 2025",
-    role: "Cybersecurity Lab Assistant",
-    company: "University of the Fraser Valley · Abbotsford, BC",
-    description:
-        "Hands-on troubleshooting support for students in network security coursework.",
-    achievements: [
-      "Diagnosed system and network issues using Wireshark, focusing on IPv4 traffic and anomaly detection.",
-      "Coordinated with faculty to review recurring lab issues and maintain configuration records.",
-      "Supported 30+ students with firewall rules, IP whitelisting, and access control concepts.",
-    ],
-    technologies: ["Wireshark", "IPv4 Networking", "Firewalls"],
-    current: false,
-  },
 ];
 
 export const Experience = () => {
@@ -70,8 +70,9 @@ export const Experience = () => {
               Where I&apos;ve worked
             </h2>
             <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-100">
-              Support, security, and software — across an internship, a
-              part-time analyst role, a retail floor, and a university lab.
+              Technical support, security, and software — across a remote
+              support role, an internship, a university lab, and a retail
+              floor.
             </p>
           </div>
 

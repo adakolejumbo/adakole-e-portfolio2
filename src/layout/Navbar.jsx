@@ -1,5 +1,7 @@
 import { Button } from "@/components/Button";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X, Github, Linkedin, Download } from "lucide-react";
+
+const RESUME_URL = "/projects/Adakole_Jumbo-Ochigbo_Resume.pdf";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -74,6 +76,15 @@ export const Navbar = () => {
               <Linkedin size={18} />
             </a>
 
+            <a
+                href={RESUME_URL}
+                download="Adakole_Jumbo-Ochigbo_Resume.pdf"
+                className="inline-flex items-center gap-2 px-3 py-2 text-sm rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
+            >
+              <Download size={16} />
+              Resume
+            </a>
+
             <Button size="sm" asChild>
               <a href="#contact">Contact Me</a>
             </Button>
@@ -102,6 +113,16 @@ export const Navbar = () => {
                       {link.label}
                     </a>
                 ))}
+
+                <a
+                    href={RESUME_URL}
+                    download="Adakole_Jumbo-Ochigbo_Resume.pdf"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground py-2"
+                >
+                  <Download size={18} />
+                  Download Resume
+                </a>
 
                 <Button onClick={() => setIsMobileMenuOpen(false)} asChild>
                   <a href="#contact">Contact Me</a>
